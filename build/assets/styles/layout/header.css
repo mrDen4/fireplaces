@@ -1,0 +1,40 @@
+.header__container {
+  width: 1170px;
+  margin: 0 auto; }
+
+.header__top {
+  margin-bottom: 40px; }
+
+.header__logo {
+  color: #242121;
+  font-size: 25px;
+  width: 115px;
+  line-height: 24px; }
+
+.header__clock, .header__phone, .header__map {
+  display: flex; }
+  .header__clock .clock__img, .header__phone .clock__img, .header__map .clock__img {
+    width: 55px;
+    height: 55px; }
+  .header__clock p, .header__phone p, .header__map p {
+    margin: 0;
+    font-size: 13px; }
+
+.header__phone .phone__img {
+  width: 55px;
+  height: 55px; }
+
+.header__map .phone__img {
+  width: 55px;
+  height: 55px; }
+
+.header__list {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  padding: 0; }
+  .header__list li {
+    margin-right: 30px; }
+  .header__list a {
+    color: black;
+    font-size: 14px; }

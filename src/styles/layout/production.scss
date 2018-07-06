@@ -1,0 +1,49 @@
+.production {
+    background: #f9f9f9;
+    padding-top: 300px;
+
+    .production__container {
+        height: 100%;
+        margin: 0 auto;
+        width: 1170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .production__title {
+        font-size: 50px;
+    }
+
+    .production__card {
+        background: white;
+        padding: 26px;
+        width: 100%;
+        display: flex;
+        border-radius: 5px;
+
+        .card__about {
+
+            .about__subitle {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .about__btn {
+                background: white;
+                color: #eb7c0e;
+                border: 2px solid #dad9d9;
+                width: 146px;
+                height: 54px;
+            }
+        }
+
+        .cad__img {
+            width: 80%;
+        }   
+    }
+}

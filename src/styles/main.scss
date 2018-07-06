@@ -1,6 +1,14 @@
 //layout
 @import "./layout/header.scss";
 @import "./layout/hero.scss";
+@import "./layout/production.scss";
+@import "./layout/products.scss";
+@import "./layout/callback.scss";
+@import "./layout/company.scss";
+@import "./layout/contacts.scss";
+
+//config
+@import "./config/base.scss";
 
 // Bootstrap
 @import "./bootstrap/bootstrap.scss";

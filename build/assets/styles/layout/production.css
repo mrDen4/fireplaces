@@ -1,0 +1,31 @@
+.production {
+  background: #f9f9f9;
+  padding-top: 300px; }
+  .production .production__container {
+    height: 100%;
+    margin: 0 auto;
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .production .production__title {
+    font-size: 50px; }
+  .production .production__card {
+    background: white;
+    padding: 26px;
+    width: 100%;
+    display: flex;
+    border-radius: 5px; }
+    .production .production__card .card__about .about__subitle {
+      font-size: 28px; }
+    .production .production__card .card__about p {
+      font-size: 16px; }
+    .production .production__card .card__about .about__btn {
+      background: white;
+      color: #eb7c0e;
+      border: 2px solid #dad9d9;
+      width: 146px;
+      height: 54px; }
+    .production .production__card .cad__img {
+      width: 80%; }

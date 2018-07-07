@@ -9,6 +9,19 @@
     }
 }
 
+.header__btn {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    font-size: 30px;
+    color: #ea7500;
+    display: none;
+
+    @include tablets() {
+        display: initial;
+    }
+}
+
 .header__top {
     margin-bottom: 40px;
     padding-top: 20px;
@@ -27,6 +40,11 @@
         @include tablets {
             display: none;
         }
+    }
+
+    .header__contacts--active {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -98,6 +116,7 @@
     padding: 0;
     margin: 0;
     width: 100%;
+    transition: 1s;
 
     @include tablets() {
         display: none;
@@ -121,4 +140,11 @@
             text-decoration: none;
         }
     }
+}
+
+.header__list--active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

@@ -24,6 +24,10 @@ const paths = {
     scripts: {
         src: 'src/js/**/*.js',
         dest: 'build/assets/scripts/'
+    },
+    font: {
+        src: 'src/font/**/*.*',
+        dest: 'build/assets/font'
     }
 }
 
@@ -45,6 +49,12 @@ function scripts() {
         .pipe(gulp.dest(paths.scripts.dest));
 }
 
+//font
+function font() {
+    return gulp.src(paths.font.src)
+        .pipe(gulp.dest(paths.font.dest));
+}
+
 // clear
 function clean() {
     return del(paths.root);
@@ -56,6 +66,7 @@ function watch() {
     gulp.watch(paths.template.src, template);
     gulp.watch(paths.images.src, images);
     gulp.watch(paths.scripts.src, scripts);
+    gulp.watch(paths.font.src, font);
 }
 
 // локальный сервер + livereload (встроенный)
@@ -76,9 +87,10 @@ exports.template = template;
 exports.styles = styles;
 exports.clean = clean;
 exports.images = images;
+exports.font = font;
 
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(styles, template, images, scripts),
+    gulp.parallel(styles, template, images, scripts, font),
     gulp.parallel(watch, server)
 ));

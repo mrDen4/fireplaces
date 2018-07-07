@@ -5,7 +5,7 @@
     .production__container {
         height: 100%;
         margin: 0 auto;
-        width: 1170px;
+        max-width: 1170px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -22,6 +22,7 @@
         width: 100%;
         display: flex;
         border-radius: 5px;
+        flex-wrap: wrap;
 
         .card__about {
 
@@ -39,6 +40,7 @@
                 border: 2px solid #dad9d9;
                 width: 146px;
                 height: 54px;
+                cursor: pointer;
             }
         }
 

@@ -5,8 +5,9 @@
     .contacts__container {
         height: 100%;
         margin: 0 auto;
-        width: 1170px;
+        max-width: 1170px;
         display: flex;
+        flex-wrap: wrap;
     }
 }
 

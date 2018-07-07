@@ -5,7 +5,7 @@
     .company__container {
         height: 100%;
         margin: 0 auto;
-        width: 1170px;
+        max-width: 1170px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -20,6 +20,7 @@
 .company__content {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 
     .company__text {
         background: white;

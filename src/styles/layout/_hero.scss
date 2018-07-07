@@ -56,7 +56,10 @@
         display: flex;
         width: 100%;
         list-style: none;
-        flex-wrap: wrap;
+        
+        @include tablets() {
+            flex-wrap: wrap;
+        }
     }
     
     .about__item {

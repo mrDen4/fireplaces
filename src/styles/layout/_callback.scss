@@ -14,6 +14,7 @@
 .callback__title {
     text-align: center;
     font-size: 50px;
+    margin-top: 50px;
 
     @include tablets() {
         font-size: 40px;

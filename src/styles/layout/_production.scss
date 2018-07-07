@@ -34,7 +34,11 @@
         width: 100%;
         display: flex;
         border-radius: 5px;
-        flex-wrap: wrap;
+        
+        @include tablets() {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
         .card__about {
 

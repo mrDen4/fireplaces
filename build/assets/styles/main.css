@@ -5,8 +5,10 @@ body {
   max-width: 1170px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  padding: 0 20px; }
+  flex-direction: column; }
+  @media screen and (max-width: 800px) {
+    .header__container {
+      padding: 0 20px; } }
 
 .header__top {
   margin-bottom: 40px;
@@ -131,8 +133,10 @@ body {
   .info__about .about__list {
     display: flex;
     width: 100%;
-    list-style: none;
-    flex-wrap: wrap; }
+    list-style: none; }
+    @media screen and (max-width: 800px) {
+      .info__about .about__list {
+        flex-wrap: wrap; } }
   .info__about .about__item {
     border-right: 1px solid #dddddd;
     padding-right: 63px;
@@ -177,8 +181,11 @@ body {
     padding: 26px;
     width: 100%;
     display: flex;
-    border-radius: 5px;
-    flex-wrap: wrap; }
+    border-radius: 5px; }
+    @media screen and (max-width: 800px) {
+      .production .production__card {
+        flex-wrap: wrap;
+        justify-content: center; } }
     .production .production__card .card__about .about__subitle {
       font-size: 28px; }
     .production .production__card .card__about p {
@@ -276,7 +283,8 @@ body {
 
 .callback__title {
   text-align: center;
-  font-size: 50px; }
+  font-size: 50px;
+  margin-top: 50px; }
   @media screen and (max-width: 800px) {
     .callback__title {
       font-size: 40px;
@@ -329,12 +337,19 @@ body {
 
 .company__content {
   display: flex;
-  width: 100%;
-  flex-wrap: wrap; }
+  width: 100%; }
+  @media screen and (max-width: 800px) {
+    .company__content {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; } }
   .company__content .company__text {
     background: white;
     padding: 40px 20px;
     border-radius: 5px; }
+    @media screen and (max-width: 800px) {
+      .company__content .company__text {
+        margin-bottom: 20px; } }
   .company__content .company__news {
     background: white;
     padding: 16px;
@@ -343,6 +358,9 @@ body {
     max-width: 320px;
     margin-left: 20px;
     border-radius: 5px; }
+    @media screen and (max-width: 800px) {
+      .company__content .company__news {
+        width: 100%; } }
     .company__content .company__news .news__title {
       font-size: 28px; }
     .company__content .company__news .news__text {
@@ -365,13 +383,13 @@ body {
     height: 100%;
     margin: 0 auto;
     max-width: 1170px;
-    display: flex;
-    flex-wrap: wrap; }
+    display: flex; }
     @media screen and (max-width: 800px) {
       .contacts .contacts__container {
         padding: 0 20px;
         justify-content: center;
-        align-items: center; } }
+        align-items: center;
+        flex-wrap: wrap; } }
 
 .contacts__last {
   width: 40%; }

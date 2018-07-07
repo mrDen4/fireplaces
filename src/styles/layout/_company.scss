@@ -20,12 +20,21 @@
 .company__content {
     display: flex;
     width: 100%;
-    flex-wrap: wrap;
+
+    @include tablets() {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 
     .company__text {
         background: white;
         padding: 40px 20px;
         border-radius: 5px;
+
+        @include tablets() {
+            margin-bottom: 20px;
+        }
     }
 
     .company__news {
@@ -36,6 +45,10 @@
         max-width: 320px;
         margin-left: 20px;
         border-radius: 5px;
+
+        @include tablets() {
+            width: 100%;
+        }
 
         .news__title {
             font-size: 28px;

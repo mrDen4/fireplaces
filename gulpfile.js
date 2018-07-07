@@ -36,7 +36,7 @@ function template() {
 // scss
 function styles() {
     return gulp.src('./src/styles/**/*.scss')
-        .pipe(sass({includePaths: require('node-normalize-scss').includePaths}))
+        .pipe(sass())
         .pipe(gulp.dest(paths.styles.dest))
 }
 

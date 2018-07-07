@@ -17,6 +17,11 @@
     flex-wrap: wrap;
     padding: 0;
 
+    @include tablets() {
+        align-items: center;
+        justify-content: center;
+    }
+
     .products__item {
         position: relative;
         width: 280px;

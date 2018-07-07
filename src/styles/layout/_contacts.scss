@@ -8,11 +8,23 @@
         max-width: 1170px;
         display: flex;
         flex-wrap: wrap;
+
+        @include tablets() {
+            padding: 0 20px;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 
 .contacts__last {
     width: 40%;
+
+    @include tablets() {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
 
     .last__title {
         font-size: 28px;
@@ -52,6 +64,15 @@
 .contacts__map {
     width: 60%;
     margin-left: 50px;
+
+    @include tablets() {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
 
     .map__title {
         font-size: 28px;

@@ -1,19 +1,19 @@
-//layout
-@import "./layout/header.scss";
-@import "./layout/hero.scss";
-@import "./layout/production.scss";
-@import "./layout/products.scss";
-@import "./layout/callback.scss";
-@import "./layout/company.scss";
-@import "./layout/contacts.scss";
-@import "./layout/footer.scss";
-
 //config
-@import "./config/base.scss";
-@import "./config/media.scss";
-@import "./config/variables.scss";
+@import "./config/base";
+@import "./config/media";
+@import "./config/variables";
+
+//layout
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/production";
+@import "./layout/products";
+@import "./layout/callback";
+@import "./layout/company";
+@import "./layout/contacts";
+@import "./layout/footer";
 
 // Bootstrap
-@import "./bootstrap/bootstrap.scss";
-@import "./bootstrap/bootstrap-reboot.scss";
-@import "./bootstrap/bootstrap-grid.scss";
+@import "./bootstrap/bootstrap";
+@import "./bootstrap/bootstrap-reboot";
+@import "./bootstrap/bootstrap-grid";

@@ -13,10 +13,18 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @include tablets() {
+            padding: 0 20px;
+        }
     }
 
     .hero__title {
         font-size: 90px;
+
+        @include tablets() {
+            font-size: 60px;
+        }
     }
 
     p {
@@ -37,10 +45,12 @@
     max-width: 1170px;
     border-radius: 5px;
     background: white;
-    // margin: 0 auto;
-    // margin-top: -60px;
-    // top: -60px;
     padding-top: 42px;
+
+    @include tablets() {
+        bottom: -500px;
+        left: 0;
+    }
 
     .about__list {
         display: flex;
@@ -53,6 +63,10 @@
         border-right: 1px solid #dddddd;
         padding-right: 63px;
         padding-left: 34px;
+
+        @include tablets() {
+            padding: 0;
+        }
     
         &:last-child {
             border-right: none;

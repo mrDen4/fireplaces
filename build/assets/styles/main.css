@@ -561,6 +561,119 @@ body {
   text-align: center;
   margin: 90px 0 40px 0; }
 
+.catalog {
+  background-color: #f9f9f9; }
+  .catalog .catalog__title {
+    text-align: center;
+    padding-top: 30px; }
+  .catalog .catalog__container {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media screen and (max-width: 800px) {
+      .catalog .catalog__container {
+        padding: 0 20px; } }
+  .catalog .catalog__filter {
+    height: 845px;
+    background: #ffffff;
+    margin-right: 20px;
+    width: 400px; }
+    .catalog .catalog__filter .filter__form {
+      display: flex;
+      flex-direction: column; }
+    .catalog .catalog__filter .form__type {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center; }
+    .catalog .catalog__filter .type__block {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+    .catalog .catalog__filter .type__block--inp {
+      flex-direction: row; }
+      .catalog .catalog__filter .type__block--inp .block__inp {
+        width: 40%;
+        margin-right: 20px; }
+    .catalog .catalog__filter .block__item {
+      display: flex;
+      align-items: center; }
+    .catalog .catalog__filter label {
+      margin: 0 0 5px 10px; }
+    .catalog .catalog__filter p {
+      margin: 20px 0 10px 0;
+      font-size: 20px;
+      font-weight: 400; }
+  .catalog .catalog__products .products__list {
+    display: flex; }
+    .catalog .catalog__products .products__list .products__item {
+      display: flex;
+      height: 430px; }
+    .catalog .catalog__products .products__list .item__img {
+      margin-bottom: 30px; }
+    .catalog .catalog__products .products__list .item__btn {
+      border: 2px solid #eb7c0e;
+      border-radius: 4px;
+      width: 135px;
+      height: 54px;
+      color: #eb7c0e;
+      background: none;
+      cursor: pointer; }
+    .catalog .catalog__products .products__list .item__name {
+      font-size: 20px; }
+    .catalog .catalog__products .products__list .item__price {
+      font-size: 28px; }
+    .catalog .catalog__products .products__list .item__kol {
+      font-size: 16px; }
+
+.pagination {
+  background-color: #f9f9f9; }
+  .pagination .pagination__container {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; }
+    @media screen and (max-width: 800px) {
+      .pagination .pagination__container {
+        padding: 0 20px; } }
+  .pagination .pagination__list {
+    display: flex;
+    list-style: none;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    margin-left: auto; }
+    .pagination .pagination__list .pagination__item {
+      margin-right: 10px; }
+    .pagination .pagination__list a {
+      color: black; }
+      .pagination .pagination__list a:hover {
+        text-decoration: none; }
+
+.fire {
+  background-color: #f9f9f9; }
+  .fire .fire__container {
+    background: #ffffff;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    @media screen and (max-width: 800px) {
+      .fire .fire__container {
+        padding: 0 20px; } }
+  .fire .fire__title {
+    margin-top: 40px;
+    text-align: center; }
+  .fire .fire__text {
+    max-width: 970px;
+    margin-bottom: 50px; }
+
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors

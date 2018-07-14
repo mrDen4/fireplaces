@@ -42,6 +42,10 @@
             margin-right: 0;
         }
 
+        .item__img-block {
+            max-width: 250px;
+        }
+
         .products__img {
             width: 100%;
         }
@@ -60,15 +64,30 @@
             line-height: 24px;
         }
 
+        .item__block {
+            position: absolute;
+            width: 248px;
+            height: 46px;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .products__btn {
+                position: relative;
+                bottom: -15px;
+            }
+        }
+
         .products__btn {
             width: 66px;
             height: 46px;
             border-radius: 5px;
             border: 2px solid #dad9d9;
             background-color: #ffffff;
-            position: absolute;
-            bottom: -20px;
-            left: 115px;
+            // position: absolute;
+            // bottom: -20px;
+            // left: 115px;
             color: #eb7c0e;
             font-size: 29px;
             cursor: pointer;

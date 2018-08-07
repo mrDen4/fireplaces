@@ -655,15 +655,15 @@ body {
       height: 430px;
       margin-top: 0;
       margin-bottom: 35px;
-      margin-right: 10px; }
+      margin-right: 10px;
+      width: 275px; }
       .catalog .catalog__products .products__list .products__item:nth-child(3) {
         margin-right: 0; }
       .catalog .catalog__products .products__list .products__item:nth-child(6) {
         margin-right: 0; }
-      .catalog .catalog__products .products__list .products__item:nth-child(4) {
-        margin-right: 15; }
     .catalog .catalog__products .products__list .item__img {
-      margin-bottom: 25px; }
+      margin-bottom: 25px;
+      width: 100%; }
     .catalog .catalog__products .products__list .item__btn {
       border: 2px solid #eb7c0e;
       border-radius: 4px;

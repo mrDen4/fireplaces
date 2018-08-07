@@ -17,6 +17,10 @@
         @include tablets() {
             padding: 0 20px;
         }
+
+        @include phones() {
+            flex-direction: column;
+        }
     }
 
     .catalog__filter {

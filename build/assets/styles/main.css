@@ -594,6 +594,9 @@ body {
     @media screen and (max-width: 800px) {
       .catalog .catalog__container {
         padding: 0 20px; } }
+    @media screen and (max-width: 480px) {
+      .catalog .catalog__container {
+        flex-direction: column; } }
   .catalog .catalog__filter {
     height: 845px;
     background: #ffffff;

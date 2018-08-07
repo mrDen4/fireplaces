@@ -23,6 +23,22 @@ $(document).ready(() => {
         slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow: $('.another__btn-left'),
-        nextArrow: $('.another__btn-right')
+        nextArrow: $('.another__btn-right'),
+        responsive: [
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+        ]
     });
 });

@@ -16,6 +16,8 @@
     font-size: 30px;
     color: #ea7500;
     display: none;
+    background: none;
+    border: none;
 
     @include tablets() {
         display: initial;

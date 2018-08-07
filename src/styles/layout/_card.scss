@@ -49,13 +49,14 @@
     }
 
     .product__modal {
-        position: absolute;
+        position: fixed;
         display: none;
         flex-direction: column;
         padding: 30px;
         background: white;
         width: 500px;
         right: 500px;
+        top: 30%;
 
         .modal__exit {
             position: absolute;

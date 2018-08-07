@@ -14,6 +14,11 @@ $(document).ready(() => {
         $('.product__modal').toggleClass('product__modal--active');
     });
 
+    $('.modal__exit').on('click', function() {
+        $('.product__modal-bg').toggleClass('product__modal-bg--active');
+        $('.product__modal').toggleClass('product__modal--active');
+    });
+
     $('.another__slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,

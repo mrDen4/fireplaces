@@ -770,6 +770,14 @@ body {
     background: white;
     width: 500px;
     right: 500px; }
+    .product .product__modal .modal__exit {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      background: none;
+      border: none;
+      color: #ea7500;
+      font-size: 30px; }
     .product .product__modal .modal__title {
       font-size: 24px;
       margin-bottom: 20px; }
@@ -780,15 +788,16 @@ body {
     .product .product__modal .form__inp {
       margin-bottom: 20px;
       border-radius: 4px;
-      border: none;
-      background: #e0e0e0;
+      border: 1px solid #cacaca;
+      background-color: #f9f9f9;
       padding: 15px; }
     .product .product__modal .form__btn {
       background: #eb7c0e;
       color: white;
       border: none;
       border-radius: 4px;
-      width: 200px; }
+      height: 52px;
+      width: 158px; }
   .product .product__modal--active {
     display: flex; }
   .product .product__container {

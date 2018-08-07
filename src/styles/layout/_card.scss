@@ -32,6 +32,62 @@
 .product {
     background-color: #f9f9f9;
     padding-bottom: 40px;
+    position: relative;
+
+    .product__modal-bg {
+        position: absolute;
+        display: none;
+        width: 99999px;
+        height: 99999px;
+        top: -500px;
+        background: #000;
+        opacity: .5;
+    }
+
+    .product__modal-bg--active {
+        display: inherit;
+    }
+
+    .product__modal {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        padding: 30px;
+        background: white;
+        width: 500px;
+        right: 500px;
+
+        .modal__title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .modal__form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .form__inp {
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: none;
+            background: rgb(224, 224, 224);
+            padding: 15px;
+        }
+
+        .form__btn {
+            background: #eb7c0e;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            width: 200px;
+        }
+    }
+
+    .product__modal--active {
+        display: flex;
+    }
 
     .product__container {
         background: #ffffff;

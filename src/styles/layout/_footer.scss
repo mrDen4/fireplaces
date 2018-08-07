@@ -66,5 +66,47 @@
 .footer__copyright {
     font-size: 16px;
     text-align: center;
+    margin: 0;
+}
+
+.footer__copy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 90px 0 40px 0;
+    width: 100%;
+
+    @include phones() {
+        flex-direction: column;
+    }
+
+    .footer__by {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include phones() {
+            flex-direction: column;
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+
+    .by__text {
+        margin: 0;
+
+        @include phones() {
+            margin-bottom: 10px;
+        }
+    }
+
+    .by__logo {
+        height: 50px;
+        margin-left: 30px;
+    }
+
+    .logo__img {
+        height: 100%;
+    }
 }

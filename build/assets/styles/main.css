@@ -577,7 +577,37 @@ body {
 .footer__copyright {
   font-size: 16px;
   text-align: center;
-  margin: 90px 0 40px 0; }
+  margin: 0; }
+
+.footer__copy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 90px 0 40px 0;
+  width: 100%; }
+  @media screen and (max-width: 480px) {
+    .footer__copy {
+      flex-direction: column; } }
+  .footer__copy .footer__by {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media screen and (max-width: 480px) {
+      .footer__copy .footer__by {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px; } }
+  .footer__copy .by__text {
+    margin: 0; }
+    @media screen and (max-width: 480px) {
+      .footer__copy .by__text {
+        margin-bottom: 10px; } }
+  .footer__copy .by__logo {
+    height: 50px;
+    margin-left: 30px; }
+  .footer__copy .logo__img {
+    height: 100%; }
 
 .catalog {
   background-color: #f9f9f9; }

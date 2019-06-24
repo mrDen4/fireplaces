@@ -76,6 +76,13 @@
             .products__btn {
                 position: relative;
                 bottom: -15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    text-decoration: none;
+                }
             }
         }
 
@@ -103,4 +110,12 @@
     border: 2px solid #eb7c0e;
     background-color: #ffffff;
     color: #eb7c0e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        color: #eb7c0e;
+        text-decoration: none;
+    }
 }
